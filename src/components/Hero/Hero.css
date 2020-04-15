@@ -1,7 +1,8 @@
 .section-hero {
     position: relative;
     height: 500px;
-    background: url('./images/event.jpg') rgba(0, 0, 0, 0.69);
+    /*background: url('./images/event.jpg') rgba(0, 0, 0, 0.69);*/
+    background-color: gray;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -9,7 +10,7 @@
     background-blend-mode: multiply;
 }
 
-.section-hero__data-container {
+.section-hero_data-container {
     position: absolute;
     z-index: 1;
     left: calc((100% - 400px) / 2);
@@ -21,14 +22,14 @@
     border-radius: 15px;
 }
 
-.section-hero__title {
+.section-hero_title {
     text-align: center;
     font-size: 30px;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.section-hero__organizer {
+.section-hero_organizer {
     display: block;
     text-align: center;
     font-size: 30px;
@@ -36,13 +37,13 @@
     margin-bottom: 30px;
 }
 
-.section-hero__date {
+.section-hero_date {
     text-align: center;
     font-size: 25px;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.section-hero__data-container .btn {
+.section-hero_data-container .btn {
     margin: 0 auto;
 }

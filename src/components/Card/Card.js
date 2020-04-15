@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/img/logo.png';
 import './Card.css';
 
-const Card = () => {
+const Card = (props) => {
     return (
         <>
             <Link to="/" className="card">
                 <figure>
-                    <img src="./images/about.jpg" alt="About" />
+                    <img src={props.img_link} alt={props.alt} />
                 </figure>
-                <p className="card__title">O tjednu karijera</p>
+                <p className="card__title">{props.card_title}</p>
             </Link>
         </>
     );

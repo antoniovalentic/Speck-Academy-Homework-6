@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/logo.png';
 import './Header.css';
 
@@ -14,7 +14,7 @@ const Header = () => {
         <header className="HeaderMain">
             <div className="HeaderMain-Inner">
                 <Link to="/" className="logo-container">
-                    <Logo />
+                    <img className="LogoContainer-Image" src={Logo} alt="Logo" />
                 </Link>
                 <nav className="HeaderMain__nav">
                     <ul className="HeaderMain__nav-list">
