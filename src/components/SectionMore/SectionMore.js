@@ -5,9 +5,10 @@ import './SectionMore.css';
 
 const SectionMore = () => {
     return (
-        <About></About>
-        <CardContainer></CardContainer>
-        
+        <>
+            <About></About>
+            <CardContainer></CardContainer>
+        </>
     );
 }
 
