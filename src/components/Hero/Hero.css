@@ -1,7 +1,7 @@
 .section-hero {
     position: relative;
     height: 500px;
-    /*background: url('./images/event.jpg') rgba(0, 0, 0, 0.69);*/
+    background: url('../../assets/img/event.jpg') rgba(0, 0, 0, 0.69);
     background-color: gray;
     background-size: cover;
     background-repeat: no-repeat;
