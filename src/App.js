@@ -1,20 +1,26 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
-import Header from '../src/components/Header/Header';
-import Hero from '../src/components/Hero/Hero';
-import SectionMore from '../src/components/SectionMore/SectionMore';
-import SectionLastYear from '../src/components/SectionLastYear/SectionLastYear';
+
+/* COMPONENTS */
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+
+/* PAGES */
+import Home from './pages/Home';
+import Events from './pages/Events';
+import Speakers from './pages/Speakers';
 
 class App extends Component {
   render(){
     return (
       <>
         <Header />
-        <main>
-          <Hero />
-          <SectionMore />
-          <SectionLastYear />
-        </main>
+        <Main>
+          <Route exact path="/" Component={Home} />
+          <Route path="/events" Component={Events} />
+          <Route path="/speakers" Component={Speakers} />
+        </Main>
       </>
     );
   }

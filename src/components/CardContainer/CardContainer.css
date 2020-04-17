@@ -1,8 +1,8 @@
-.cards-container {
+.CardsConatiner {
     width: 1280px;
     margin: 0 auto;
 }
 
-.cards-container::after {
+.CardsConatiner::after {
     clear: both;
 }

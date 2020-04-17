@@ -5,8 +5,7 @@ import './Header.css';
 
 const links = {
     speakers: 'Speakers',
-    events: 'Events',
-    clock: 'Clock'
+    events: 'Events'
 }
 
 const Header = () => {
@@ -16,16 +15,13 @@ const Header = () => {
                 <Link to="/" className="logo-container">
                     <img className="LogoContainer-Image" src={Logo} alt="Logo" />
                 </Link>
-                <nav className="HeaderMain__nav">
-                    <ul className="HeaderMain__nav-list">
-                        <li className="HeaderMain__nav-list-item">
-                            <Link className="HeaderMain__nav-list-item-link" to="/events">{links.events}</Link>
+                <nav className="HeaderMain-Nav">
+                    <ul className="HeaderMain-NavList">
+                        <li className="HeaderMain-NavListItem">
+                            <Link className="HeaderMain-NavListItemLink" to="/events">{links.events}</Link>
                         </li>
-                        <li className="HeaderMain__nav-list-item">
-                            <Link className="HeaderMain__nav-list-item-link" to="/speakers">{links.speakers}</Link>
-                        </li>
-                        <li className="HeaderMain__nav-list-item">
-                            <Link className="HeaderMain__nav-list-item-link" to="/clock">{links.clock}</Link>
+                        <li className="HeaderMain-NavListItem">
+                            <Link className="HeaderMain-NavListItemLink" to="/speakers">{links.speakers}</Link>
                         </li>
                     </ul>
                 </nav>
