@@ -9,7 +9,7 @@ const Hero = () => {
                 <h1 className="SectionHero-Title">Tjedan karijera</h1>
                 <span className="SectionHero-Organizer">FOI</span>
                 <p className="SectionHero-Date">20.10.2020. - 26.10.2020.</p>
-                <Link to="/" className="CustomButton">Prijavi se</Link>
+                <Link to="/" className="Button">Prijavi se</Link>
             </div>
         </section>
     );

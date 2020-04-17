@@ -13,7 +13,7 @@ const About = () => {
                 Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
                 undoubtable source.
             </p>
-            <Link to="/" className="CustomButton">Saznaj više</Link>
+            <Link to="/" className="Button">Saznaj više</Link>
         </div>
     );
 }

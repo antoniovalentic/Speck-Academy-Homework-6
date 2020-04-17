@@ -1,8 +1,8 @@
 .CardsConatiner {
     width: 1280px;
     margin: 0 auto;
-}
 
-.CardsConatiner::after {
-    clear: both;
+    &::after {
+        clear: both;
+    }
 }

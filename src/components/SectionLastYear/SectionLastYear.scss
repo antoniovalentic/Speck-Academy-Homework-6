@@ -3,11 +3,11 @@
     overflow: hidden;
     padding: 70px 0;
     background: #efefef;
-}
 
-.SectionLastYear-Inner {
-    max-width: 1280px;
-    margin: 0 auto;
+    &-Inner {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
 }
 
 .SectionLastYear h2 {

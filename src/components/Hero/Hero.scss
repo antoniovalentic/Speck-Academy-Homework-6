@@ -8,42 +8,42 @@
     background-position: center center;
     background-attachment: fixed;
     background-blend-mode: multiply;
-}
 
-.SectionHero-DataContainer {
-    position: absolute;
-    z-index: 1;
-    left: calc((100% - 400px) / 2);
-    top: calc((100% - 250px) / 2);
-    width: 400px;
-    height: 250px;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    border-radius: 15px;
-}
+    &-DataContainer {
+        position: absolute;
+        z-index: 1;
+        left: calc((100% - 400px) / 2);
+        top: calc((100% - 250px) / 2);
+        width: 400px;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        border-radius: 15px;
+    }
 
-.SectionHero-Title {
-    text-align: center;
-    font-size: 30px;
-    color: #fff;
-    margin-bottom: 20px;
-}
+    &-Title {
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
 
-.SectionHero-Organizer {
-    display: block;
-    text-align: center;
-    font-size: 30px;
-    color: #c59613;
-    margin-bottom: 30px;
-}
+    &-Organizer {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        color: #c59613;
+        margin-bottom: 30px;
+    }
 
-.SectionHero-Date {
-    text-align: center;
-    font-size: 25px;
-    color: #fff;
-    margin-bottom: 20px;
-}
+    &-Date {
+        text-align: center;
+        font-size: 25px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
 
-.SectionHero-DataContainer .CustomButton {
-    margin: 0 auto;
+    &-DataContainer .Button {
+        margin: 0 auto;
+    }
 }

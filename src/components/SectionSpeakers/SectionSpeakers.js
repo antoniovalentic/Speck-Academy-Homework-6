@@ -4,7 +4,7 @@ import SpeakersInfoBox from '../SpeakersInfoBox/SpeakersInfoBox';
 
 const SectionEvents = () => {
     return (
-      <div className="SectionEvents">
+      <div className="SectionSpeakers">
         <SpeakersInfoBox name="Johan Bach" />
         <SpeakersInfoBox name="Sebastian Bach" />
         <SpeakersInfoBox name="Johan Franck" />
