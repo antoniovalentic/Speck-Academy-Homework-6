@@ -4,12 +4,12 @@ import './Hero.css';
 
 const Hero = () => {
     return (
-        <section className="section-hero">
-            <div className="section-hero_data-container">
-                <h1 className="section-hero_title">Tjedan karijera</h1>
-                <span className="section-hero_organizer">FOI</span>
-                <p className="section-hero_date">20.10.2020. - 26.10.2020.</p>
-                <Link to="/" className="btn">Prijavi se</Link>
+        <section className="SectionHero">
+            <div className="SectionHero-DataContainer">
+                <h1 className="SectionHero-Title">Tjedan karijera</h1>
+                <span className="SectionHero-Organizer">FOI</span>
+                <p className="SectionHero-Date">20.10.2020. - 26.10.2020.</p>
+                <Link to="/" className="CustomButton">Prijavi se</Link>
             </div>
         </section>
     );

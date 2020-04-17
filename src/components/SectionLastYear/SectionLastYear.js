@@ -4,8 +4,8 @@ import './SectionLastYear.css';
 
 const SectionLastYear = () => {
     return (
-        <section class="section-last-year">
-            <div class="section-last-year__inner">
+        <section class="SectionLastYear">
+            <div class="SectionLastYear-Inner">
                 <h2>FOI tjedan karijera 2019</h2>
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
                     classical

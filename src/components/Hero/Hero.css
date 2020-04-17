@@ -1,4 +1,4 @@
-.section-hero {
+.SectionHero {
     position: relative;
     height: 500px;
     background: url('../../assets/img/event.jpg') rgba(0, 0, 0, 0.69);
@@ -10,7 +10,7 @@
     background-blend-mode: multiply;
 }
 
-.section-hero_data-container {
+.SectionHero-DataContainer {
     position: absolute;
     z-index: 1;
     left: calc((100% - 400px) / 2);
@@ -22,14 +22,14 @@
     border-radius: 15px;
 }
 
-.section-hero_title {
+.SectionHero-Title {
     text-align: center;
     font-size: 30px;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.section-hero_organizer {
+.SectionHero-Organizer {
     display: block;
     text-align: center;
     font-size: 30px;
@@ -37,13 +37,13 @@
     margin-bottom: 30px;
 }
 
-.section-hero_date {
+.SectionHero-Date {
     text-align: center;
     font-size: 25px;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.section-hero_data-container .btn {
+.SectionHero-DataContainer .CustomButton {
     margin: 0 auto;
 }

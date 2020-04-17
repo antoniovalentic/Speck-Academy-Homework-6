@@ -1,14 +1,14 @@
-.about {
+.About {
     margin-bottom: 70px;
 }
 
-.about p {
+.About p {
     max-width: 750px;
     margin: 0 auto;
     margin-bottom: 40px;
     text-align: center;
 }
 
-.about .btn {
+.About .CustomButton {
     margin: 0 auto;
 }

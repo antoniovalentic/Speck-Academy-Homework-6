@@ -48,12 +48,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-main {
-  width: 100%;
-  overflow: hidden;
-  margin-top: 80px;
-}
-
 a {
   text-decoration: none;
   color: #000;
@@ -69,15 +63,8 @@ p {
   font-size: 18px;
 }
 
-.page-title {
-  text-align: center;
-  padding: 30px 0 60px;
-  font-size: 30px;
-}
-
-
 /* Buttons */
-.btn {
+.CustomButton {
   display: block;
   width: 160px;
   line-height: 40px;
@@ -90,6 +77,6 @@ p {
   transition: all 0.3s ease-out;
 }
 
-.btn:hover {
+.CustomButton:hover {
   background-color: #9e7911;
 }

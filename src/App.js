@@ -17,13 +17,13 @@ class App extends Component {
       <>
         <Header />
         <Main>
-          <Route exact path="/" Component={Home} />
-          <Route path="/events" Component={Events} />
-          <Route path="/speakers" Component={Speakers} />
+          <Route exact path="/" component={Home} />
+          <Route path="/events" component={Events} />
+          <Route path="/speakers" component={Speakers} />
         </Main>
       </>
     );
-  }
+  } 
 }
 
 export default App;

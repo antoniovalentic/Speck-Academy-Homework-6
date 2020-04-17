@@ -5,9 +5,9 @@ import CardContainer from '../CardContainer/CardContainer';
 
 const SectionMore = () => {
     return (
-        <div className="section-more">
-            <About></About>
-            <CardContainer></CardContainer>
+        <div className="SectionMore">
+            <About />
+            <CardContainer />
         </div>
     );
 }

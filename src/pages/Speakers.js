@@ -1,18 +1,13 @@
 import React from 'react';
-import Header from '../components/Header/Header';
-import Hero from '../components/Hero/Hero';
-import SectionMore from '../components/SectionMore/SectionMore';
-import SectionLastYear from '../components/SectionLastYear/SectionLastYear';
+import PageTitle from '../components/PageTitle/PageTitle';
+import SectionSpeakers from '../components/SectionSpeakers/SectionSpeakers';
+
 
 const Speakers = () => {
     return (
       <>
-        <Header />
-        <main>
-          <Hero />
-          <SectionMore />
-          <SectionLastYear />
-        </main>
+        <PageTitle title="Sudionici" />
+        <SectionSpeakers />
       </>
     );
 }

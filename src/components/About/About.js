@@ -4,7 +4,7 @@ import './About.css';
 
 const About = () => {
     return (
-        <div className="about">
+        <div className="About">
             <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
                 classical
                 Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
@@ -13,7 +13,7 @@ const About = () => {
                 Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
                 undoubtable source.
             </p>
-            <Link to="/" className="btn">Saznaj više</Link>
+            <Link to="/" className="CustomButton">Saznaj više</Link>
         </div>
     );
 }
