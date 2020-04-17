@@ -1,5 +1,5 @@
 import React from 'react';
-import './SectionMore.css';
+import './SectionMore.scss';
 import About from '../About/About';
 import CardContainer from '../CardContainer/CardContainer';
 

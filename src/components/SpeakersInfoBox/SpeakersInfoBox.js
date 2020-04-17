@@ -1,5 +1,5 @@
 import React from 'react';
-import './SpeakersInfoBox.css';
+import './SpeakersInfoBox.scss';
 
 const SpeakersInfoBox = (props) => {
     return (

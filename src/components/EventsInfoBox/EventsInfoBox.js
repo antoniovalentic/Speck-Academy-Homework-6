@@ -1,7 +1,7 @@
 import React from 'react';
 import Location from '../../assets/img/location-icon.png';
 import Time from '../../assets/img/time-icon.png';
-import './EventsInfoBox.css';
+import './EventsInfoBox.scss';
 
 const EventsInfoBox = () => {
     return (

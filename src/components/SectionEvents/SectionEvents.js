@@ -1,5 +1,5 @@
 import React from 'react';
-import './SectionEvents.css';
+import './SectionEvents.scss';
 import EventsInfoBox from '../EventsInfoBox/EventsInfoBox';
 
 const SectionEvents = () => {

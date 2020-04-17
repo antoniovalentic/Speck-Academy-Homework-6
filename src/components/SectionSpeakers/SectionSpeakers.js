@@ -1,5 +1,5 @@
 import React from 'react';
-import './SectionSpeakers.css';
+import './SectionSpeakers.scss';
 import SpeakersInfoBox from '../SpeakersInfoBox/SpeakersInfoBox';
 
 const SectionEvents = () => {

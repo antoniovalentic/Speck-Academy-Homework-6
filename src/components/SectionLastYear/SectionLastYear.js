@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from '../../assets/img/last-year.jpg';
-import './SectionLastYear.css';
+import './SectionLastYear.scss';
 
 const SectionLastYear = () => {
     return (
