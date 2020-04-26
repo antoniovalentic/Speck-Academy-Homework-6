@@ -1,11 +1,11 @@
 import React from 'react';
-import './PageTitle.scss';
+import { PageTitleComp } from './PageTitleStyle';
 
 const PageTitle = (props) => {
     return (
-      <>
-        <h1 className="PageTitle">{props.title}</h1>
-      </>
+      <PageTitleComp>
+        {props.title}
+      </PageTitleComp>
     );
 }
 

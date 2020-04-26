@@ -1,19 +1,11 @@
 import React from 'react';
-import './SectionEvents.scss';
-import EventsInfoBox from '../EventsInfoBox/EventsInfoBox';
+import { SectionEventsComp } from './SectionEventsStyle';
 
-const SectionEvents = () => {
+const SectionEvents = (props) => {
     return (
-      <div className="SectionEvents">
-        <EventsInfoBox />
-        <EventsInfoBox />
-        <EventsInfoBox />
-        <EventsInfoBox />
-        <EventsInfoBox />
-        <EventsInfoBox />
-        <EventsInfoBox />
-        <EventsInfoBox />
-      </div>
+      <SectionEventsComp>
+        {props.children}
+      </SectionEventsComp>
     );
 }
 

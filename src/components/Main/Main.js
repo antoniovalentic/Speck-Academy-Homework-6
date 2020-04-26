@@ -1,11 +1,11 @@
 import React from 'react';
-import './Main.scss';
+import { MainComp } from './MainStyle';
 
 const Main = (props) => {
     return (
-      <div className="Main">
+      <MainComp>
         {props.children}
-      </div>
+      </MainComp>
     );
 }
 

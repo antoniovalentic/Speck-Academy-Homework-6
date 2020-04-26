@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/logo.png';
 import './Header.scss';
+import { HeaderMain, HeaderMainInner, HeaderMainNav, HeaderMainNavListItem, HeaderMainNavList, HeaderMainNavListItemLink, LogoContainer, LogoContainerImage } from './HeaderStyle';
 
 const links = {
     speakers: 'Speakers',
@@ -10,23 +11,23 @@ const links = {
 
 const Header = () => {
     return (
-        <header className="HeaderMain">
-            <div className="HeaderMain-Inner">
-                <Link to="/" className="LogoContainer">
-                    <img className="LogoContainer-Image" src={Logo} alt="Logo" />
-                </Link>
-                <nav className="HeaderMain-Nav">
-                    <ul className="HeaderMain-NavList">
-                        <li className="HeaderMain-NavListItem">
+        <HeaderMain>
+            <HeaderMainInner>
+                <LogoContainer href="/#">
+                    <LogoContainerImage src={Logo} alt="Logo" />
+                </LogoContainer>
+                <HeaderMainNav>
+                    <HeaderMainNavList>
+                        <HeaderMainNavListItem>
                             <Link className="HeaderMain-NavListItemLink" to="/events">{links.events}</Link>
-                        </li>
-                        <li className="HeaderMain-NavListItem">
+                        </HeaderMainNavListItem>
+                        <HeaderMainNavListItem>
                             <Link className="HeaderMain-NavListItemLink" to="/speakers">{links.speakers}</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+                        </HeaderMainNavListItem>
+                    </HeaderMainNavList>
+                </HeaderMainNav>
+            </HeaderMainInner>
+        </HeaderMain>
     );
 }
 

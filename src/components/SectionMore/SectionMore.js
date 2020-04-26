@@ -1,14 +1,14 @@
 import React from 'react';
-import './SectionMore.scss';
+import { SectionMoreComp } from './SectionMoreStyle';
 import About from '../About/About';
 import CardContainer from '../CardContainer/CardContainer';
 
 const SectionMore = () => {
     return (
-        <div className="SectionMore">
+        <SectionMoreComp>
             <About />
             <CardContainer />
-        </div>
+        </SectionMoreComp>
     );
 }
 

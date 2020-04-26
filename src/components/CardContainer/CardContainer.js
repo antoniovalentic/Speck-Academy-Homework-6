@@ -1,5 +1,5 @@
 import React from 'react';
-import './CardContainer.scss';
+import { CardContainerComp } from './CardContainerStyle';
 import Card from '../Card/Card';
 
 /* IMAGES */
@@ -10,12 +10,12 @@ import Partenrs_Img from '../../assets/img/partner.jpg';
 
 const CardContainer = () => {
     return (
-        <div className="CardsConatiner">
+        <CardContainerComp>
             <Card img_link={About_Img} alt="About" card_title="O tjednu karijera" />
             <Card img_link={Speakers_Img} alt="Speakers" card_title="Izlagači" />
             <Card img_link={Agenda_Img} alt="Agenda" card_title="Raspored događanja" />
             <Card img_link={Partenrs_Img} alt="Partenrs" card_title="Partneri" />
-        </div>
+        </CardContainerComp>
     );
 }
 
