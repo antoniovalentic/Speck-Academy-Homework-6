@@ -6,6 +6,9 @@ import eventsMockedData from '../lib/events';
 import Loader from '../components/Loader/Loader';
 import SearchBar from '../components/SearchBar/SearchBar';
 
+/* API calls */
+import { getEvents } from '../api/events';
+
 
 const Events = () => {
   const [events, setEvents] = useState([]);
@@ -16,9 +19,16 @@ const Events = () => {
     setSearchTerm(search.target.value);
   };
 
+  /*const data = getEvents(localStorage.getItem('token')).then(res => {
+    setEvents(eventsMockedData);
+  });
+  console.log(data);*/
+
   useEffect(() => {
     const timer = setTimeout(() => {
-      setEvents(eventsMockedData);
+      getEvents(localStorage.getItem('token')).then(res => {
+        setEvents(res.events);
+      });
     }, 1000);
       
     const results = events.filter(person => person.title.toLowerCase().includes(searchTerm));
@@ -26,7 +36,9 @@ const Events = () => {
       setEventsSearch(results);
     }
     else{
-      setEventsSearch(eventsMockedData);
+      getEvents(localStorage.getItem('token')).then(res => {
+        setEventsSearch(res.events);
+      });
     }
       
     return () => clearTimeout(timer);

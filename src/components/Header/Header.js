@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect, useContext } from 'react';
+import { Link, Redirect, useHistory } from 'react-router-dom';
 import Logo from '../../assets/img/logo.png';
 import './Header.scss';
 import { HeaderMain, HeaderMainInner, HeaderMainNav, HeaderMainNavListItem, HeaderMainNavList, HeaderMainNavListItemLink, LogoContainer, LogoContainerImage } from './HeaderStyle';
@@ -12,8 +12,9 @@ const links = {
     logout: 'Logout'
 }
 
-const Header = () => {
-    const [isAuth, setIsAuth] = useState(false);
+const Header = (props) => {
+    
+    const [isAuth, setIsAuth] = useState(props.isAuth);
     useEffect(() => {
         if (localStorage.getItem('token') !== null){
             setIsAuth(true);
@@ -22,11 +23,14 @@ const Header = () => {
             setIsAuth(false);
         }
     }, []);
+    
+    const history = useHistory();
 
     const handleLogout = (e) =>{
         e.preventDefault();
         localStorage.removeItem('token');
         setIsAuth(false);
+        history.push('/');
     }
 
     return (

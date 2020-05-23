@@ -6,6 +6,9 @@ import speakersMockedData from '../lib/speakers';
 import Loader from '../components/Loader/Loader';
 import SearchBar from '../components/SearchBar/SearchBar';
 
+/* API calls */
+import { getSpeakers } from '../api/speakers';
+
 
 const Speakers = () => {
   const [speakers, setSpeakers] = useState([]);
@@ -18,7 +21,9 @@ const Speakers = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setSpeakers(speakersMockedData);
+      getSpeakers(localStorage.getItem('token')).then(res => {
+        setSpeakers(res.speakers);
+      });
     }, 1000);
       
     const results = speakers.filter(person => person.title.toLowerCase().includes(searchTerm));
@@ -26,7 +31,9 @@ const Speakers = () => {
       setSpeakersSearch(results);
     }
     else{
-      setSpeakersSearch(speakersMockedData);
+      getSpeakers(localStorage.getItem('token')).then(res => {
+        setSpeakersSearch(res.speakers);
+      });
     }
       
     return () => clearTimeout(timer);
